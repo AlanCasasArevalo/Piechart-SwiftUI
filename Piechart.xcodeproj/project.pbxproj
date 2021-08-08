@@ -11,6 +11,12 @@
 		511F76B126BE85C8008BC081 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511F76B026BE85C8008BC081 /* ContentView.swift */; };
 		511F76B326BE85CD008BC081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511F76B226BE85CD008BC081 /* Assets.xcassets */; };
 		511F76B626BE85CD008BC081 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511F76B526BE85CD008BC081 /* Preview Assets.xcassets */; };
+		511F76C026BE88B5008BC081 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511F76BF26BE88B5008BC081 /* LanguageModel.swift */; };
+		511F76C226BE8927008BC081 /* FakeLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511F76C126BE8927008BC081 /* FakeLanguages.swift */; };
+		511F76C526BFC41D008BC081 /* View+CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511F76C426BFC41D008BC081 /* View+CGPoint.swift */; };
+		511F76C726BFC445008BC081 /* DrawShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511F76C626BFC445008BC081 /* DrawShapeView.swift */; };
+		511F76C926BFC47D008BC081 /* LeyendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511F76C826BFC47D008BC081 /* LeyendView.swift */; };
+		511F76CB26BFC4B4008BC081 /* PiechartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511F76CA26BFC4B4008BC081 /* PiechartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		511F76B226BE85CD008BC081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		511F76B526BE85CD008BC081 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		511F76B726BE85CD008BC081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		511F76BF26BE88B5008BC081 /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
+		511F76C126BE8927008BC081 /* FakeLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLanguages.swift; sourceTree = "<group>"; };
+		511F76C426BFC41D008BC081 /* View+CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CGPoint.swift"; sourceTree = "<group>"; };
+		511F76C626BFC445008BC081 /* DrawShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShapeView.swift; sourceTree = "<group>"; };
+		511F76C826BFC47D008BC081 /* LeyendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeyendView.swift; sourceTree = "<group>"; };
+		511F76CA26BFC4B4008BC081 /* PiechartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiechartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,10 @@
 		511F76AD26BE85C8008BC081 /* Piechart */ = {
 			isa = PBXGroup;
 			children = (
+				511F76C326BFC403008BC081 /* Extensions */,
 				511F76AE26BE85C8008BC081 /* PiechartApp.swift */,
-				511F76B026BE85C8008BC081 /* ContentView.swift */,
+				511F76BE26BE8898008BC081 /* Model */,
+				511F76BD26BE8890008BC081 /* View */,
 				511F76B226BE85CD008BC081 /* Assets.xcassets */,
 				511F76B726BE85CD008BC081 /* Info.plist */,
 				511F76B426BE85CD008BC081 /* Preview Content */,
@@ -67,6 +81,34 @@
 				511F76B526BE85CD008BC081 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		511F76BD26BE8890008BC081 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				511F76B026BE85C8008BC081 /* ContentView.swift */,
+				511F76CA26BFC4B4008BC081 /* PiechartView.swift */,
+				511F76C826BFC47D008BC081 /* LeyendView.swift */,
+				511F76C626BFC445008BC081 /* DrawShapeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		511F76BE26BE8898008BC081 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				511F76BF26BE88B5008BC081 /* LanguageModel.swift */,
+				511F76C126BE8927008BC081 /* FakeLanguages.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		511F76C326BFC403008BC081 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				511F76C426BFC41D008BC081 /* View+CGPoint.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511F76CB26BFC4B4008BC081 /* PiechartView.swift in Sources */,
+				511F76C226BE8927008BC081 /* FakeLanguages.swift in Sources */,
 				511F76B126BE85C8008BC081 /* ContentView.swift in Sources */,
+				511F76C026BE88B5008BC081 /* LanguageModel.swift in Sources */,
+				511F76C726BFC445008BC081 /* DrawShapeView.swift in Sources */,
+				511F76C526BFC41D008BC081 /* View+CGPoint.swift in Sources */,
 				511F76AF26BE85C8008BC081 /* PiechartApp.swift in Sources */,
+				511F76C926BFC47D008BC081 /* LeyendView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
